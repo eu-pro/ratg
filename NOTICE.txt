@@ -10,7 +10,7 @@ Notice - https://github.com/netty/netty/blob/4.1/NOTICE.txt
 
 Notice file (https://github.com/netty/netty/blob/4.1/NOTICE.txt):
 
-							The Netty Project
+			    The Netty Project
                             =================
 
 Please visit the Netty web site for more information:
