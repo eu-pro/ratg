@@ -18,7 +18,7 @@ Generated test example:
 
         // PUT /snippets/complicated; http response status: 200 
         new SnippetsComplicatedEndpointPUT("/snippets/complicated").executeAndValidate(
-                ["Content-Type":"application/json", "Accept":"*/*", "Cache-Control":"no-cache", "Accept-Encoding":"gzip, deflate, br"],
+                ["Content-Type":"application/json", "Accept":"*/*", "Accept-Encoding":"gzip, deflate, br"],
                 ["id":"PUTT-PUTT-PUTT-PUTT", "count":111],
                 ["Content-Type":"application/json;charset=UTF-8", "Content-Length":"243"],
                 ["level":"1", "count":100, "enabled":true, "secondLelel":["level":"2", "count":200, "enabled":false, "thirdLevel":["level":"3", "count":300, "enabled":true, "str":"str"]]])
@@ -37,8 +37,8 @@ By default, the response is validated by comparing the maps, but since Rest Assu
 To add some features BaseRestGroovyTest can be extended, if necessary.
 
 ```
-	import static org.hamcrest.CoreMatchers.containsString
-	import static org.hamcrest.CoreMatchers.equalTo
+import static org.hamcrest.CoreMatchers.containsString
+import static org.hamcrest.CoreMatchers.equalTo
     ...
     @Test
     void "Test"() {
